@@ -67,13 +67,13 @@ plt.style.use('ggplot')
 
 fig1, ax1 = plt.subplots(figsize=(7, 3.5))
 
+
 ax1.plot(x_pred1, y_pred1, color='r', label='Regression line', linewidth=4, alpha=0.5)
 ax1.scatter(x1, y1, edgecolor='k', facecolor='blue', alpha=0.7, label='data')
 ax1.set_ylabel('y', fontsize=20)
 ax1.set_xlabel('x', fontsize=20)
 ax1.legend(facecolor='white', fontsize=11)
-ax1.text(0.55, 0.15, f'$y = {round(model1.coef_[0][0], 4)} x - {round(abs(model1.intercept_[0]), 2)} $', fontsize=17,
+ax1.text(0.10, 0.70, f'$y = {round(model1.coef_[0][0], 4)} x - {round(abs(model1.intercept_[0]), 2)} $', fontsize=17,
         transform=ax1.transAxes)
-
 fig1.tight_layout()
 plt.show()
